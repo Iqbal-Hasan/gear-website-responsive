@@ -41,7 +41,10 @@ img {
 .white {
   color: white;
 }
-.fs{
+.text-center {
+  text-align: center;
+}
+.fs {
   font-size: 1.6rem;
 }
 
@@ -64,7 +67,10 @@ img {
   font-weight: bold;
 }
 .navigation,
-.btn-primary {
+.btn-primary,
+.card__text > p,
+.rating,
+.card__description,.more>p {
   font-size: 1.6rem;
 }
 .navigation > li {
@@ -110,19 +116,57 @@ img {
   margin-left: 5px;
 }
 /*---------------------------------------- brand section style ----------------------------------------*/
-.brands{
+.brands {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 30px 0px 50px 0px;
   align-items: center;
 }
-.brands > img{
+.brands > img {
   width: 5.7rem;
 }
 /*---------------------------------------- popular section style ----------------------------------------*/
-
-
-
-
+.popular{
+  margin-bottom: 50px;
+}
+.popular_title {
+  font-size: 2.5rem;
+  color: var(--text-card-title);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.popular__card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.card {
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card__text {
+  text-align: center;
+  padding: 5px;
+}
+.card__text > h3 {
+  font-size: 2rem;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.star > i {
+  color: rgb(243, 210, 22);
+}
+.more{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--clr-btn);
+}
