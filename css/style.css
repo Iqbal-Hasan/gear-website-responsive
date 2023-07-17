@@ -1,0 +1,39 @@
+/* root var */
+:root {
+  --text-main: #3a3a3a;
+  --text-card-title: #18191f;
+  --text-card-price: rgba(0, 0, 0, 0.87);
+  --text-card-rate: #5e6366;
+  --text-card-des: #787885;
+
+  --clr-btn: #e02c6d;
+
+  --clr-bg: #0a0826;
+
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-comforta: "Comfortaa", cursive;
+}
+
+/* global class */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-poppins);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.white {
+  color: white;
+}
