@@ -56,6 +56,12 @@ img {
 .featured_text {
   text-align: center;
 }
+.header,
+.brands,
+.popular,
+.featured {
+  margin-bottom: 9rem;
+}
 .header_banner {
   display: flex;
   flex-direction: column-reverse;
@@ -124,16 +130,12 @@ img {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 30px 0px 50px 0px;
   align-items: center;
 }
 .brands > img {
   width: 5.7rem;
 }
 /*---------------------------------------- popular section style ----------------------------------------*/
-.popular {
-  margin-bottom: 50px;
-}
 .popular_title {
   font-size: 2.5rem;
   color: var(--text-card-title);
@@ -144,7 +146,6 @@ img {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 15px;
-  margin-bottom: 20px;
 }
 .card {
   padding: 1rem;
@@ -179,11 +180,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 50px;
 }
 .featured_text > h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5rem;
 }
 .featured_text > p {
   margin-bottom: 10px;
@@ -209,6 +209,100 @@ img {
   margin-top: 10px;
   transition: 0.3s all ease;
 }
-.social:hover{
+.social:hover {
   color: var(--clr-btn);
+}
+/* responsive layout */
+@media screen and (min-width: 430px) {
+  .margin-lr {
+    margin: 0 4rem;
+  }
+  .banner__img,
+  .banner__img > img {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .header,
+  .brands,
+  .popular,
+  .featured {
+    margin-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .margin-lr {
+    margin: 0 3rem;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+  }
+  .banner__img,
+  .banner__img > img {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .brands > img {
+    width: 9rem;
+  }
+  .popular__card {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .header,
+  .brands,
+  .popular,
+  .featured {
+    margin-bottom: 7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner__img,
+  .banner__img > img {
+    max-width: 500px;
+  }
+  .featured_img > img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .popular__card {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+    max-width: 1000px;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .navigation {
+    width: 500px;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header_banner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banner__title {
+    font-size: 4.5rem;
+    text-align: left;
+  }
+  .banner__description {
+    text-align: left;
+  }
+  .btn {
+    justify-content: flex-start;
+  }
 }
