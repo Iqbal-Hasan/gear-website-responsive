@@ -52,7 +52,8 @@ img {
 .navigation,
 .header__logo,
 .banner__title,
-.banner__description {
+.banner__description,
+.featured_text {
   text-align: center;
 }
 .header_banner {
@@ -70,7 +71,9 @@ img {
 .btn-primary,
 .card__text > p,
 .rating,
-.card__description,.more>p {
+.card__description,
+.more > p,
+.featured_text > p {
   font-size: 1.6rem;
 }
 .navigation > li {
@@ -128,7 +131,7 @@ img {
   width: 5.7rem;
 }
 /*---------------------------------------- popular section style ----------------------------------------*/
-.popular{
+.popular {
   margin-bottom: 50px;
 }
 .popular_title {
@@ -163,10 +166,25 @@ img {
 .star > i {
   color: rgb(243, 210, 22);
 }
-.more{
+.more {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   align-items: center;
   color: var(--clr-btn);
+}
+
+/*---------------------------------------- featured section style ----------------------------------------*/
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.featured_text > h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.featured_text > p {
+  margin-bottom: 10px;
 }
