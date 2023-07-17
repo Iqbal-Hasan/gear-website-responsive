@@ -85,10 +85,12 @@ img {
 .banner__title {
   font-size: 3rem;
   line-height: 1.2;
+  color: var(--text-card-title);
 }
 .banner__description {
   font-size: 1.4rem;
   margin: 20px 0px;
+  color: var(--text-card-des);
 }
 .btn {
   display: flex;
@@ -97,7 +99,7 @@ img {
 }
 .btn-primary {
   display: flex;
-  padding: 1.5rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   border-radius: 3rem;
   background-color: var(--clr-btn);
   color: white;
@@ -108,3 +110,19 @@ img {
   margin-left: 5px;
 }
 /*---------------------------------------- brand section style ----------------------------------------*/
+.brands{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.brands > img{
+  width: 5.7rem;
+}
+/*---------------------------------------- popular section style ----------------------------------------*/
+
+
+
+
