@@ -24,7 +24,7 @@
 html {
   font-size: 62.5%;
 }
-body {
+.margin-lr {
   margin: 0 1.5rem;
 }
 a {
@@ -187,4 +187,28 @@ img {
 }
 .featured_text > p {
   margin-bottom: 10px;
+}
+/*---------------------------------------- footer section style ----------------------------------------*/
+.footer {
+  background-color: var(--clr-bg);
+  color: white;
+  padding: 7rem 0;
+}
+.footer > h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  font-size: 2.5rem;
+  gap: 20px;
+  justify-content: center;
+}
+.social {
+  margin-top: 10px;
+  transition: 0.3s all ease;
+}
+.social:hover{
+  color: var(--clr-btn);
 }
