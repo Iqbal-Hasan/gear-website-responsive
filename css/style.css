@@ -21,8 +21,15 @@
   box-sizing: border-box;
   font-family: var(--ff-poppins);
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 1.5rem;
+}
 a {
   text-decoration: none;
+  color: var(--text-main);
 }
 li {
   list-style-type: none;
@@ -31,9 +38,73 @@ img {
   display: block;
   width: 100%;
 }
-.text-center {
-  text-align: center;
-}
 .white {
   color: white;
 }
+.fs{
+  font-size: 1.6rem;
+}
+
+/*---------------------------------------- header style ----------------------------------------*/
+.navigation,
+.header__logo,
+.banner__title,
+.banner__description {
+  text-align: center;
+}
+.header_banner {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.header__logo {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: var(--ff-comforta);
+  margin: 20px 0px;
+  font-weight: bold;
+}
+.navigation,
+.btn-primary {
+  font-size: 1.6rem;
+}
+.navigation > li {
+  margin-bottom: 10px;
+}
+.navigation li a:hover,
+.navigation li a:focus {
+  text-decoration: underline;
+}
+.banner__img {
+  background-image: url("../images/Circle\ design.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 2rem 0rem;
+}
+.banner__title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.banner__description {
+  font-size: 1.4rem;
+  margin: 20px 0px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.btn-primary {
+  display: flex;
+  padding: 1.5rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--clr-btn);
+  color: white;
+  border: 0;
+}
+.right-arrow {
+  font-size: 25px;
+  margin-left: 5px;
+}
+/*---------------------------------------- brand section style ----------------------------------------*/
