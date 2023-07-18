@@ -272,8 +272,11 @@ img {
   .popular__card {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
-    max-width: 1000px;
     justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .card{
   }
   nav {
     display: flex;
@@ -304,5 +307,14 @@ img {
   }
   .btn {
     justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1477px){
+  .popular__card {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+    justify-content: center;
+    max-width: 2000px;
+    margin: auto;
   }
 }
